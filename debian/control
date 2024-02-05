@@ -1,7 +1,7 @@
 Source: deepin-desktop-base
 Section: misc
 Priority: optional
-Maintainer: Deepin Sysdev <sysdev@deepin.com>
+Maintainer: gfdgd xi <3025613752@qq.com>, Deepin Sysdev <sysdev@deepin.com>
 Standards-Version: 3.9.6
 Build-Depends: debhelper (>= 9)
 
