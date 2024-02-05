@@ -1,0 +1,7 @@
+[Release]
+Version=15.11
+Type=Desktop
+Type[zh_CN]=桌面版
+
+[Addition]
+Milestone=
