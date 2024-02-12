@@ -3,7 +3,7 @@ Section: misc
 Priority: optional
 Maintainer: gfdgd xi<3025613752@qq.com>, Deepin Sysdev <sysdev@deepin.com>
 Standards-Version: 4.5.1
-Build-Depends: debhelper-compat
+Build-Depends: debhelper-compat (= 12)
 
 Package: deepin-desktop-base
 Architecture: any
