@@ -1,9 +1,9 @@
 [Version] 
-SystemName=DebianDDE
+SystemName=GXDE
 ProductType=Desktop
 ProductType[zh_CN]=桌面
 EditionName=Community
 EditionName[zh_CN]=社区版
-MajorVersion=20.9
+MajorVersion=15.11
 MinorVersion=1030
 OsBuild=11031.002
