@@ -25,13 +25,13 @@
      inkscape:deskcolor="#505050"
      showgrid="false"
      inkscape:zoom="2.7716061"
-     inkscape:cx="44.198201"
-     inkscape:cy="29.946536"
-     inkscape:window-width="1600"
-     inkscape:window-height="822"
-     inkscape:window-x="0"
-     inkscape:window-y="0"
-     inkscape:window-maximized="1"
+     inkscape:cx="43.837399"
+     inkscape:cy="29.766135"
+     inkscape:window-width="1066"
+     inkscape:window-height="540"
+     inkscape:window-x="244"
+     inkscape:window-y="114"
+     inkscape:window-maximized="0"
      inkscape:current-layer="svg17" />
   <!-- Generator: Sketch 47 (45396) - http://www.bohemiancoding.com/sketch -->
   <title
@@ -83,7 +83,10 @@
      cy="20.807375"
      style="display:inline;fill:#002424;fill-opacity:1;stroke:#002424;stroke-width:3.7024;stroke-dasharray:none;stroke-opacity:0.919447"
      rx="18.956181"
-     ry="18.956175" />
+     ry="18.956175"
+     inkscape:export-filename="../files/deepin-logo.png"
+     inkscape:export-xdpi="96"
+     inkscape:export-ydpi="96" />
   <path
      style="fill:none;stroke:#ffffff;stroke-width:13.2292;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:0.27858"
      d="m 49.965371,17.517625 c -8.574017,4.817069 -15.596933,12.34743 -19.80511,21.23614 -5.682222,12.002259 -6.070758,26.325112 -1.393872,38.753652 3.05335,8.114092 8.231677,15.478252 15.104889,20.762228 6.873213,5.283975 15.455006,8.417975 24.124513,8.384795 7.54248,-0.0289 14.993662,-2.42951 21.405881,-6.40107 6.412219,-3.971557 11.808578,-9.473222 16.076488,-15.692129 3.39953,-4.953569 6.15126,-10.514565 6.83003,-16.483981 0.45404,-3.993008 -0.047,-8.101488 -1.52768,-11.837508 -1.48068,-3.736019 -3.94633,-7.088328 -7.12471,-9.547636 -3.17837,-2.459309 -7.066433,-4.009777 -11.07256,-4.327916 -4.006126,-0.318138 -8.114713,0.609691 -11.552476,2.691048 -3.054811,1.849503 -5.544472,4.573154 -7.287187,7.69012 -1.742715,3.116965 -2.752672,6.617887 -3.137106,10.168202 -0.768867,7.100632 0.929904,14.258168 3.393237,20.962056 7.391133,20.114744 21.982226,37.498454 40.511152,48.264644"

@@ -1,0 +1,9 @@
+[Version] 
+SystemName=GXDE
+ProductType=Desktop
+ProductType[zh_CN]=桌面
+EditionName=Community
+EditionName[zh_CN]=社区版
+MajorVersion=15.11
+MinorVersion=15.11
+OsBuild=11038.007
