@@ -24,7 +24,7 @@ build:
         else ifeq (${ARCH_BUILD}, mips64)
 		sed -e "s|@@VERSION@@|$(VERSION)|g" -e "s|@@RELEASE@@|$(RELEASE)|g" files/desktop-version-loongson.in > files/desktop-version
 		sed -e "s|@@VERSION@@|$(VERSION)|g" -e "s|@@RELEASE@@|$(RELEASE)|g" files/os-version-loongson > files/os-version
-		else ifeq (${ARCH_BUILD}, loongarch64)
+        else ifeq (${ARCH_BUILD}, loongarch64)
 		sed -e "s|@@VERSION@@|$(VERSION)|g" -e "s|@@RELEASE@@|$(RELEASE)|g" files/desktop-version-loongson.in > files/desktop-version
 		sed -e "s|@@VERSION@@|$(VERSION)|g" -e "s|@@RELEASE@@|$(RELEASE)|g" files/os-version-loongson > files/os-version
         else ifeq (${ARCH_BUILD}, sw_64)
