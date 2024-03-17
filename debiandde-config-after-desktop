@@ -7,4 +7,4 @@ if [[ $debianVersion==12.* ]]; then
 	nohup dde-dock &
 fi
 # 加载 deepin anything
-nohup deepin-anything-server &
+#nohup deepin-anything-server &
