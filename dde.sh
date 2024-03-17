@@ -2,6 +2,9 @@
 export PATH=$PATH:/sbin
 export QT_QPA_PLATFORMTHEME=deepin
 
+# 加载 deepin anything 模块
+modprobe vfs_monitor | true
+
 if [[ -f /var/log/installer/lsb-release ]]; then
     # 使用 Debian Installer 安装系统
     # 判定是否已经配置过
