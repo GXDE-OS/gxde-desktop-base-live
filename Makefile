@@ -69,7 +69,7 @@ install:
 	mkdir -pv $(DESTDIR)/usr/share/polkit-1/rules.d/
 	mkdir -pv $(DESTDIR)/etc/default/grub.d/
 	cp -rv dde-file-manager-gvfs.rules $(DESTDIR)/usr/share/polkit-1/rules.d/dde-file-manager-gvfs.rules
-	cp -rv dde.sh $(DESTDIR)/etc/profile.d/dde.sh
+	cp -rv gxde.sh $(DESTDIR)/etc/profile.d/gxde.sh
 	cp -rv gxde.list $(DESTDIR)/etc/apt/sources.list.d/gxde.list
 	cp -rv gxde-first-config.service $(DESTDIR)/usr/lib/systemd/system/gxde-first-config.service
 	cp -rv gxde.gpg $(DESTDIR)/etc/apt/trusted.gpg.d/gxde.gpg
