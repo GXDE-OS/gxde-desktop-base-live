@@ -1,10 +1,10 @@
 [Desktop Entry]
 Version=1.0
-Name=debiandde
-Name[zh_CN]=自动配置debiandde（进入桌面后）
-Comment=自动配置debiandde（进入桌面后）
+Name=GXDE
+Name[zh_CN]=自动配置GXDE（进入桌面后）
+Comment=自动配置GXDE（进入桌面后）
 Type=Application
-Exec=/usr/bin/debiandde-config-after-desktop
+Exec=/usr/bin/gxde-config-after-desktop
 Icon=deepin-launcher
 Categories=System
 
