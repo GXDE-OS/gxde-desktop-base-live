@@ -8,3 +8,7 @@ if [[ $debianVersion==12.* ]]; then
 fi
 # 加载 deepin anything
 #nohup deepin-anything-server &
+# 加载 VNC（如果开启的话）
+if [[ -f /.config/GXDE/gxde-x11vnc ]]; then
+	nohup x11vnc --forever -rfbauth ~/.vnc/passwd &
+fi
