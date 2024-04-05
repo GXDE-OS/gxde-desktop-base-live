@@ -1,2 +1,6 @@
 deb [trusted=true] http://dde15.debian12.gfdgdxi.top/ ./
 deb [trusted=true] http://master.dl.sourceforge.net/project/debiandde/dde15-debian12-deb-more/ ./
+
+# CN Mirror
+#deb [trusted=true] http://gfdgdxi.v5.idcfengye.com/GXDE/ ./
+#deb [trusted=true] http://gfdgdxi.v5.idcfengye.com/GXDE-More/ ./
