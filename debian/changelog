@@ -1,3 +1,10 @@
+deepin-desktop-base (2024.04.20) UNRELEASED; urgency=medium
+
+  * Add kernel source
+  * 
+
+ -- gfdgd_xi <3025613752@qq.com>  Sat, 20 Apr 2024 16:25:12 +0800
+
 deepin-desktop-base (2024.04.05) unstable; urgency=medium
 
   * release 20.9  
