@@ -1,9 +1,10 @@
-deepin-desktop-base (2024.04.29) UNRELEASED; urgency=medium
+deepin-desktop-base (2024.05.01) UNRELEASED; urgency=medium
 
-  * Add kernel source
+  * 更新 apt 源
+  * 
   * 
 
- -- gfdgd_xi <3025613752@qq.com>  Sat, 20 Apr 2024 16:25:12 +0800
+ -- gfdgd_xi <3025613752@qq.com>  Wed, 01 May 2024 11:55:21 +0800
 
 deepin-desktop-base (2024.04.05) unstable; urgency=medium
 
