@@ -1,0 +1,9 @@
+PRETTY_NAME="GXDE OS 15.12"
+NAME="GXDE OS"
+VERSION_ID="15.12"
+VERSION="15.12"
+VERSION_CODENAME=bookworm
+ID=GXDE
+HOME_URL="https://gxde.gfdgdxi.top/"
+SUPPORT_URL="https://gxde.gfdgdxi.top/"
+BUG_REPORT_URL="https://gxde.gfdgdxi.top/"

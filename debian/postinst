@@ -11,7 +11,8 @@ case "${1}" in
 	configure)
 	    update-alternatives --install /etc/deepin-version \
 		    deepin-version /usr/lib/deepin/desktop-version 50
-
+		# 修改 os-release
+		cp -r /usr/lib/deepin/os-release /usr/lib/os-release || true
 	    if [ -x /usr/sbin/update-initramfs ]
 	    then
 		    update-initramfs -u
