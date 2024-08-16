@@ -77,9 +77,11 @@ install:
 	cp -rv gxde.gpg $(DESTDIR)/etc/apt/trusted.gpg.d/gxde.gpg
 	cp -rv 90bookworm-backports $(DESTDIR)/etc/apt/preferences.d/
 	cp gxde-config-after-desktop $(DESTDIR)/usr/bin/gxde-config-after-desktop
+	cp gxde-config.sh $(DESTDIR)/usr/bin/gxde-config
 	cp gxde-config-after-desktop.desktop $(DESTDIR)/etc/xdg/autostart/gxde-config-after-desktop.desktop
 	cp GXDE-grub.cfg $(DESTDIR)/etc/default/grub.d/GXDE-grub.cfg
 	chmod +x $(DESTDIR)/etc/profile.d/gxde.sh
+	chmod +x $(DESTDIR)/usr/bin/gxde-config
 	chmod +x $(DESTDIR)/usr/bin/gxde-config-after-desktop
 clean:
 	rm -f files/desktop-version
