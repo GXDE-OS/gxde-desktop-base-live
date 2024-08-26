@@ -8,7 +8,7 @@ echo "15.4,Panda,panda,2017-04-19" >> /usr/share/distro-info/deepin.csv
 
 arch=$(dpkg --print-architecture)
 isDebian12=$(cat /etc/debian_version | grep 12 | wc -l)
-if [[ $arch != "amd64" ]] && [[ $arch != "arm64" ]] && [[ isDebian12 != "" ]] && [[ ! -f /etc/apt/sources.list.d/debian.list ]] && [[ ! -f /tmp/debian-backports.list ]]; then
+if [[ $arch != "amd64" ]] && [[ $arch != "arm64" ]] && [[ isDebian12 != "" ]] && [[ ! -f /etc/apt/sources.list.d/debian.list ]] && [[ -f /tmp/debian-backports.list ]] && [[ ! -f /etc/deepin/calamares ]]; then
 	cp -v /tmp/debian-backports.list /etc/apt/sources.list.d/debian.list
 fi
 
