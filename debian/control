@@ -7,8 +7,9 @@ Build-Depends: debhelper-compat (= 12)
 
 Package: deepin-desktop-base
 Architecture: any
-Provides: deepin-appstore-config
-Conflicts: deepin-desktop-server
+Provides: deepin-appstore-config, gxde-install-source
+Replaces: gxde-install-source
+Conflicts: deepin-desktop-server, gxde-install-source
 Depends: ${misc:Depends}, deepin-keyring, distro-info-data,
  eject, fonts-noto, fonts-symbola, deepin-anything-server, deepin-anything-libs, tela-grub2-themes
 Description: The basic file of Deepin Desktop, 
