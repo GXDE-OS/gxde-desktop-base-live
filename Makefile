@@ -74,9 +74,9 @@ install:
 	cp -rv debian-backports.list $(DESTDIR)/tmp/debian-backports.list
 	cp -rv dde-file-manager-gvfs.rules $(DESTDIR)/usr/share/polkit-1/rules.d/dde-file-manager-gvfs.rules
 	cp -rv gxde.sh $(DESTDIR)/etc/profile.d/gxde.sh
-	cp -rv gxde.list $(DESTDIR)/etc/apt/sources.list.d/gxde.list
+	#cp -rv gxde.list $(DESTDIR)/etc/apt/sources.list.d/gxde.list
 	cp -rv gxde-first-config.service $(DESTDIR)/usr/lib/systemd/system/gxde-first-config.service
-	cp -rv gxde.gpg $(DESTDIR)/etc/apt/trusted.gpg.d/gxde.gpg
+	#cp -rv gxde.gpg $(DESTDIR)/etc/apt/trusted.gpg.d/gxde.gpg
 	cp -rv 90bookworm-backports $(DESTDIR)/etc/apt/preferences.d/
 	cp gxde-config-after-desktop $(DESTDIR)/usr/bin/gxde-config-after-desktop
 	cp gxde-config.sh $(DESTDIR)/usr/bin/gxde-config
