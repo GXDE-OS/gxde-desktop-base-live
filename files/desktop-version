@@ -1,0 +1,9 @@
+[Release]
+Version=15.14beta
+Type=Desktop Yunli
+Type[zh_CN]=社区版・云璃
+Edition=Y2024E0001
+Copyright=Y2024CR001
+[Addition]
+Milestone=Yunli
+Buildid=build1
