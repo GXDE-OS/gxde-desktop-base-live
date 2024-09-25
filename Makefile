@@ -1,5 +1,5 @@
-VERSION := 15.13
-RELEASE :=
+VERSION := 15.14beta
+RELEASE := Yunli
 ARCH_BUILD :=$(shell uname -m)
 
 all: build
