@@ -1,7 +1,7 @@
 [Release]
 Version=@@VERSION@@
-Type=Desktop Yunli
-Type[zh_CN]=社区版・云璃
+Type=Desktop
+Type[zh_CN]=社区版
 Edition=Y2024E0001
 Copyright=Y2024CR001
 [Addition]
