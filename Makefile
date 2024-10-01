@@ -1,5 +1,5 @@
-VERSION := 15.14beta
-RELEASE := Yunli
+VERSION := 15.14
+RELEASE := bixie
 ARCH_BUILD :=$(shell uname -m)
 
 all: build

@@ -1,8 +1,8 @@
-deepin-desktop-base (2024.09.25) UNRELEASED; urgency=medium
+deepin-desktop-base (2024.10.01) UNRELEASED; urgency=medium
 
-  * Change Version 15.14 beta
+  * 支持紧凑模式
 
- -- shenmo <shenmo@spark-app.store>  Sun, 01 Sep 2024 08:14:05 +0800
+ -- gfdgd_xi <3025613752@qq.com>  Tue, 01 Oct 2024 19:16:24 +0800
 
 deepin-desktop-base (2024.09.01) UNRELEASED; urgency=medium
 

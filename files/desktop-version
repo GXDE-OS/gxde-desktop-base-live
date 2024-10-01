@@ -1,9 +1,9 @@
 [Release]
-Version=15.14beta
+Version=15.14
 Type=Desktop
 Type[zh_CN]=社区版
 Edition=Y2024E0001
 Copyright=Y2024CR001
 [Addition]
-Milestone=Yunli
+Milestone=Bixie
 Buildid=build1
