@@ -14,8 +14,8 @@ fi
 
 case "${1}" in
 	configure)
-		# 禁用有问题的 nmbd 服务
-		systemctl disable nmbd.service | true
+		# nmbd 服务似乎已经没问题了
+		# systemctl disable nmbd.service | true
 
 	    update-alternatives --install /etc/deepin-version \
 		    deepin-version /usr/lib/deepin/desktop-version 50
