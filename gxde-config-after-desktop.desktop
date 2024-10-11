@@ -1,7 +1,7 @@
 [Desktop Entry]
 Version=1.0
-Name=GXDE
-Name[zh_CN]=自动配置GXDE（进入桌面后）
+Name=GXDE Autostart Tools
+Name[zh_CN]=GXDE自动启动（进入桌面后）
 Comment=自动配置GXDE（进入桌面后）
 Type=Application
 Exec=/usr/bin/gxde-config-after-desktop

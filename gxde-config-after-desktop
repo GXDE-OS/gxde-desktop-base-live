@@ -1,13 +1,6 @@
 #!/bin/bash
 cd /tmp
-debianVersion=`cat /etc/debian_version`
-if [[ $debianVersion==12.* ]]; then
-	cd /tmp
-	killall dde-dock dde-osd -9
-	nohup dde-dock &
-fi
-# 加载 deepin anything
-#nohup deepin-anything-server &
+
 # 加载 VNC（如果开启的话）
 if [[ -f ~/.config/GXDE/gxde-x11vnc ]]; then
 	if [[ -f ~/.vnc/passwd ]]; then
