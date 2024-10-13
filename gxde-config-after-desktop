@@ -9,6 +9,10 @@ fi
 
 ## Kwin Blur效果会爆炸，所以需要让这两个家伙重新启动下
 
+nohup dde-launcher &
+
+## 预加载dlauncher加速启动
+
 # 加载 VNC（如果开启的话）
 if [[ -f ~/.config/GXDE/gxde-x11vnc ]]; then
 	if [[ -f ~/.vnc/passwd ]]; then
