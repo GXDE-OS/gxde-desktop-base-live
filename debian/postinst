@@ -21,7 +21,7 @@ case "${1}" in
 		    deepin-version /usr/lib/deepin/desktop-version 50
 		# 修改 os-release
 		# 只有之前修改过才会二次修改
-		if [[ $(cat /usr/lib/os-release | grep GXDE | wc -l) != 0 ]]; then
+		if [[ $(cat /usr/lib/os-release | grep GXDE | wc -l) != "0" ]]; then
 			cp -r /usr/lib/deepin/os-release /usr/lib/os-release || true
 		fi
 	    if [ -x /usr/sbin/update-initramfs ]
