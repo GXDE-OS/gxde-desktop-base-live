@@ -24,4 +24,4 @@ sudo make install
 ````
 
 ## 帮助
-更新版本请同时更改 `Makefile` 和 `files/os-release`
+更新版本请同时更改 `Makefile` 和 `files/os-release` 和 `files/os-version` ，但是不用修改desktopversion
