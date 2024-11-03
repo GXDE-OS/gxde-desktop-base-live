@@ -62,6 +62,7 @@ install:
 	install -Dm644 files/Deepin.mirrors     ${DESTDIR}/usr/share/python-apt/templates/Deepin.mirrors
 	# config
 	mkdir -pv $(DESTDIR)/etc/profile.d/
+	mkdir -pv $(DESTDIR)/etc/apt/apt.conf.d/
 	mkdir -pv $(DESTDIR)/etc/apt/preferences.d/
 	mkdir -pv $(DESTDIR)/etc/apt/trusted.gpg.d/
 	mkdir -pv $(DESTDIR)/etc/apt/sources.list.d/
@@ -78,6 +79,7 @@ install:
 
 	#cp -rv gxde.gpg $(DESTDIR)/etc/apt/trusted.gpg.d/gxde.gpg
 	cp -rv 90bookworm-backports $(DESTDIR)/etc/apt/preferences.d/
+	cp -rv 90gxde-valid.conf $(DESTDIR)/etc/apt/apt.conf.d/
 	cp gxde-config-after-desktop $(DESTDIR)/usr/bin/gxde-config-after-desktop
 	cp gxde-config-after-desktop.desktop $(DESTDIR)/etc/xdg/autostart/gxde-config-after-desktop.desktop
 	cp GXDE-grub.cfg $(DESTDIR)/etc/default/grub.d/GXDE-grub.cfg
