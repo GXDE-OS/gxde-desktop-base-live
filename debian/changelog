@@ -1,12 +1,13 @@
-deepin-desktop-base (2024.10.27) UNRELEASED; urgency=medium
+deepin-desktop-base (2024.11.03) UNRELEASED; urgency=medium
 
   * 支持紧凑模式
   * 去掉beta字样
   * 修复: dde-dock/dde-osd模糊丢失
   * 预加载dlauncher和dcc
   * 修复问题 https://gitee.com/GXDE-OS/GXDE/issues/IAXOFS
+  * 修复 loong64 源过期问题
 
- -- gfdgd_xi <3025613752@qq.com>  Sun, 27 Oct 2024 12:24:03 +0800
+ -- gfdgd_xi <3025613752@qq.com>  Sun, 03 Nov 2024 14:50:16 +0800
 
 deepin-desktop-base (2024.09.01) UNRELEASED; urgency=medium
 
