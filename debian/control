@@ -12,6 +12,6 @@ Replaces: gxde-install-source
 Conflicts: deepin-desktop-server, gxde-install-source
 Recommends: gxde-source
 Depends: ${misc:Depends}, deepin-keyring, distro-info-data, 
- eject, fonts-noto, fonts-symbola, deepin-anything-server, deepin-anything-libs, tela-grub2-themes
+ eject, fonts-noto, fonts-symbola, tela-grub2-themes,base-files(>=12.4+deb12u8)
 Description: The basic file of Deepin Desktop, 
  provides system attribute description for DDE components
