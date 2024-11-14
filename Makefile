@@ -1,4 +1,4 @@
-VERSION := 15.14.1
+VERSION := 15.14.2
 RELEASE := Bixie
 ARCH_BUILD :=$(shell uname -m)
 

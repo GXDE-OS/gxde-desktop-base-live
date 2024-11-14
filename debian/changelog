@@ -1,4 +1,4 @@
-deepin-desktop-base (2024.11.12) UNRELEASED; urgency=medium
+deepin-desktop-base (2024.11.14) UNRELEASED; urgency=medium
 
   * 支持紧凑模式
   * 去掉beta字样
@@ -6,6 +6,7 @@ deepin-desktop-base (2024.11.12) UNRELEASED; urgency=medium
   * 预加载dlauncher和dcc
   * 修复问题 https://gitee.com/GXDE-OS/GXDE/issues/IAXOFS
   * 修复 loong64 源过期问题
+  * bump to 15.14.2
 
  -- gfdgd_xi <3025613752@qq.com>  Sun, 03 Nov 2024 14:50:16 +0800
 

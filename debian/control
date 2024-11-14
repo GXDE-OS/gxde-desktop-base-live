@@ -1,7 +1,7 @@
 Source: deepin-desktop-base
 Section: misc
 Priority: optional
-Maintainer: gfdgd xi<3025613752@qq.com>, Deepin Sysdev <sysdev@deepin.com>
+Maintainer: gfdgd xi<3025613752@qq.com>, shenmo <shenmo@spark-app.store>, Deepin Sysdev <sysdev@deepin.com>
 Standards-Version: 4.5.1
 Build-Depends: debhelper-compat (= 12)
 
@@ -13,5 +13,5 @@ Conflicts: deepin-desktop-server, gxde-install-source
 Recommends: gxde-source
 Depends: ${misc:Depends}, deepin-keyring, distro-info-data, 
  eject, fonts-noto, fonts-symbola, tela-grub2-themes,base-files(>=12.4+deb12u8)
-Description: The basic file of Deepin Desktop, 
+Description: The basic file of GXDE Desktop, 
  provides system attribute description for DDE components
