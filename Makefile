@@ -72,7 +72,7 @@ install:
 	mkdir -pv $(DESTDIR)/usr/share/polkit-1/rules.d/
 	mkdir -pv $(DESTDIR)/etc/default/grub.d/
 	mkdir -p ${DESTDIR}/tmp
-	cp -rv debian-backports.list $(DESTDIR)/tmp/debian-backports.list
+	#cp -rv debian-backports.list $(DESTDIR)/tmp/debian-backports.list
 	cp -rv dde-file-manager-gvfs.rules $(DESTDIR)/usr/share/polkit-1/rules.d/dde-file-manager-gvfs.rules
 	cp -rv gxde.sh $(DESTDIR)/etc/profile.d/gxde.sh
 	#cp -rv gxde.list $(DESTDIR)/etc/apt/sources.list.d/gxde.list
