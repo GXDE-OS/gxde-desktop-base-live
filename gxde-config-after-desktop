@@ -13,7 +13,9 @@ nohup dde-launcher &
 
 ## 预加载dlauncher加速启动
 
-nohup gxde-k9 &
+if command -v gxde-k9 > /dev/null; then
+    nohup gxde-k9 &
+fi
 
 ## 启动 gxde-k9 拉起 watchdog see: https://gitee.com/GXDE-OS/gxde-k9
 
