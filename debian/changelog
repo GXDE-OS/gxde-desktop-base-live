@@ -1,4 +1,4 @@
-deepin-desktop-base (2024.11.22-1) UNRELEASED; urgency=medium
+deepin-desktop-base (2024.11.23) UNRELEASED; urgency=medium
 
   * 支持紧凑模式
   * 去掉beta字样
@@ -8,7 +8,7 @@ deepin-desktop-base (2024.11.22-1) UNRELEASED; urgency=medium
   * 修复 loong64 源过期问题
   * bump to 15.14.2
   * 支持GTK应用使用FileChooser
-  * 支持gxde-k9 watchdog
+  * 移除gxde-k9自启动，转为让gxde-k9自己拉自己以适配deepin
 
  -- gfdgd_xi <3025613752@qq.com>  Thu, 14 Nov 2024 20:29:26 +0800
 
