@@ -7,5 +7,3 @@ export DBUS_FATAL_WARNINGS=0
 if [[ -f $HOME/.config/GXDE/dtk/SIZEMODE ]]; then
 	export D_DTK_SIZEMODE=1
 fi
-export GTK_USE_PORTAL="1"
-# Forward file chooser to DFM Settings
