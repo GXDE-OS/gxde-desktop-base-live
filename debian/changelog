@@ -1,4 +1,4 @@
-deepin-desktop-base (2024.11.20) UNRELEASED; urgency=medium
+deepin-desktop-base (2024.12.23) UNRELEASED; urgency=medium
 
   * 支持紧凑模式
   * 去掉beta字样
@@ -8,8 +8,9 @@ deepin-desktop-base (2024.11.20) UNRELEASED; urgency=medium
   * 修复 loong64 源过期问题
   * bump to 15.14.2
   * 支持GTK应用使用FileChooser
+  * 修复 os-release 的兼容性问题
 
- -- gfdgd_xi <3025613752@qq.com>  Thu, 14 Nov 2024 20:29:26 +0800
+ -- gfdgd_xi <3025613752@qq.com>  Mon, 23 Dec 2024 22:53:15 +0800
 
 deepin-desktop-base (2024.09.01) UNRELEASED; urgency=medium
 
