@@ -7,7 +7,8 @@ deepin-desktop-base (2024.12.23) UNRELEASED; urgency=medium
   * 修复问题 https://gitee.com/GXDE-OS/GXDE/issues/IAXOFS
   * 修复 loong64 源过期问题
   * bump to 15.14.2
-  * 支持GTK应用使用FileChooser
+  * 停止让不支持的GTK应用使用FileChooser
+  * 移除gxde-k9自启动，转为让gxde-k9自己拉自己以适配deepin
   * 修复 os-release 的兼容性问题
 
  -- gfdgd_xi <3025613752@qq.com>  Mon, 23 Dec 2024 22:53:15 +0800
