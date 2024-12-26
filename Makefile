@@ -86,7 +86,7 @@ install:
 	#cp -rv gxde.list $(DESTDIR)/etc/apt/sources.list.d/gxde.list
 
 	#cp -rv gxde.gpg $(DESTDIR)/etc/apt/trusted.gpg.d/gxde.gpg
-	cp -rv 90bookworm-backports $(DESTDIR)/etc/apt/preferences.d/
+	#cp -rv 90bookworm-backports $(DESTDIR)/etc/apt/preferences.d/
 	cp -rv 90gxde-valid.conf $(DESTDIR)/etc/apt/apt.conf.d/
 	cp gxde-config-after-desktop $(DESTDIR)/usr/bin/gxde-config-after-desktop
 	cp gxde-config-after-desktop.desktop $(DESTDIR)/etc/xdg/autostart/gxde-config-after-desktop.desktop
