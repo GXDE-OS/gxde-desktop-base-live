@@ -1,0 +1,6 @@
+#!/bin/bash
+# 因为现在该 deb 包已移除该配置文件，但同时为了保证之前用户的兼容性，在已经开启 backport 源的系统
+# 备份 backport 源防止被 dpkg 自动移除导致依赖问题
+if [[ -f /etc/apt/preferences.d/90bookworm-backports ]]; then
+    mv /etc/apt/preferences.d/90bookworm-backports /etc/apt/preferences.d/90bookworm-backports-bak
+fi
