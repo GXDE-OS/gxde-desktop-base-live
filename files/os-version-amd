@@ -5,5 +5,5 @@ ProductType[zh_CN]=桌面
 EditionName=Community
 EditionName[zh_CN]=社区版
 MajorVersion=15
-MinorVersion=15.14.2
+MinorVersion=15.14.3
 OsBuild=11038.007
