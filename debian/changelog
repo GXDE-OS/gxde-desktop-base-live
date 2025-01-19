@@ -1,4 +1,4 @@
-deepin-desktop-base (2025.01.18) UNRELEASED; urgency=medium
+deepin-desktop-base (2025.01.19) UNRELEASED; urgency=medium
 
   * 支持紧凑模式
   * 去掉beta字样
@@ -12,8 +12,9 @@ deepin-desktop-base (2025.01.18) UNRELEASED; urgency=medium
   * 修复 os-release 的兼容性问题
   * 调整 backport 源优先级
   * 修复 backport 下无法正常安装 libcurl4:i386 的问题
+  * backport 源用户自动添加 tianlu-bpo 源
 
- -- gfdgd_xi <3025613752@qq.com>  Sat, 18 Jan 2025 20:07:36 +0800
+ -- gfdgd_xi <3025613752@qq.com>  Sun, 19 Jan 2025 10:02:37 +0800
 
 deepin-desktop-base (2024.09.01) UNRELEASED; urgency=medium
 
