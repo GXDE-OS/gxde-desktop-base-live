@@ -19,6 +19,6 @@ Depends:
  fonts-noto, 
  fonts-symbola, 
  base-files (>= 12.4+deb12u8),
- systemd (>= 257.2-2) | systemd (<< 254.22-1~bpo12+1) | gxde-bpo-source,
+ systemd (>= 256.5-2) | systemd (<< 254.22-1~bpo12+1) | gxde-bpo-source,
 Description: The basic file of GXDE Desktop, 
  provides system attribute description for DDE components
