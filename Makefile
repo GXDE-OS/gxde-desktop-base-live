@@ -79,6 +79,12 @@ install:
 	mkdir -pv $(DESTDIR)/usr/lib/systemd/system/
 	mkdir -pv $(DESTDIR)/usr/share/polkit-1/rules.d/
 	mkdir -pv $(DESTDIR)/etc/default/grub.d/
+	mkdir -pv $(DESTDIR)/usr/share/i18n/
+	mkdir -pv $(DESTDIR)/usr/share/plymouth/
+	mkdir -pv $(DESTDIR)/etc/systemd/system.conf.d/
+	mkdir -pv $(DESTDIR)/etc/systemd/logind.conf.d/
+	mkdir -pv $(DESTDIR)/usr/share/python-apt/templates/
+	mkdir -pv $(DESTDIR)/usr/share/deepin/distribution/
 	mkdir -p ${DESTDIR}/tmp
 	#cp -rv debian-backports.list $(DESTDIR)/tmp/debian-backports.list
 	cp -rv dde-file-manager-gvfs.rules $(DESTDIR)/usr/share/polkit-1/rules.d/dde-file-manager-gvfs.rules
@@ -91,6 +97,23 @@ install:
 	cp gxde-config-after-desktop $(DESTDIR)/usr/bin/gxde-config-after-desktop
 	cp gxde-config-after-desktop.desktop $(DESTDIR)/etc/xdg/autostart/gxde-config-after-desktop.desktop
 	cp GXDE-grub.cfg $(DESTDIR)/etc/default/grub.d/GXDE-grub.cfg
+
+	cp -rv files/i18n_dependent.json $(DESTDIR)/usr/share/i18n
+	cp -rv files/language_info.json $(DESTDIR)/usr/share/i18n/
+	cp -rv files/desktop-version $(DESTDIR)/usr/lib/deepin/
+	if [ "$(GXDE_CODENAME)" = "tianlu" ]; then cp -rv files/lsb-release $(DESTDIR)/etc/ ; fi
+	if [ "$(GXDE_CODENAME)" = "tianlu" ]; then cp -rv files/os-version $(DESTDIR)/etc/ ; fi
+	if [ "$(GXDE_CODENAME)" = "bixie" ]; then cp -rv files/lsb-release $(DESTDIR)/etc/ ; fi
+	if [ "$(GXDE_CODENAME)" = "bixie" ]; then  cp -rv files/os-version $(DESTDIR)/etc/ ; fi
+	cp -rv files/appstore.json $(DESTDIR)/etc/
+	cp -rv files/deepin-logo.png $(DESTDIR)/usr/share/plymouth/
+	cp -rv files/systemd.conf $(DESTDIR)/etc/systemd/system.conf.d/
+	cp -rv files/logind.conf $(DESTDIR)/etc/systemd/logind.conf.d/
+	cp -rv files/Deepin.info $(DESTDIR)/usr/share/python-apt/templates/
+	cp -rv files/Deepin.mirrors $(DESTDIR)/usr/share/python-apt/templates/
+	cp -rv distribution.info $(DESTDIR)/usr/share/deepin/
+	cp -rv distribution/* $(DESTDIR)/usr/share/deepin/distribution/
+
 	chmod +x $(DESTDIR)/etc/profile.d/gxde.sh
 	chmod +x $(DESTDIR)/usr/bin/gxde-config-after-desktop
 clean:
