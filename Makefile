@@ -46,7 +46,9 @@ build:
 		sed -e "s|@@VERSION@@|$(VERSION)|g" -e "s|@@RELEASE@@|$(RELEASE)|g" files/os-version-riscv > files/os-version
 		sed -e "s|@@VERSION@@|$(VERSION)|g" -e "s|@@RELEASE@@|$(RELEASE)|g" files/os-release-trixie > files/os-release
         endif
+	if [ "$(GXDE_CODENAME)" = "zhuangzhuang" ]; then sed -e "s|@@VERSION@@|$(VERSION)|g" -e "s|@@RELEASE@@|$(RELEASE)|g" files/os-release-trixie > files/os-release ; fi
 	sed -e "s|@@VERSION@@|$(VERSION)|g" -e "s|@@RELEASE@@|$(RELEASE)|g" files/lsb-release.in > files/lsb-release
+	sed -e "s|@@VERSION@@|$(VERSION)|g" -e "s|@@RELEASE@@|$(RELEASE)|g" files/lsb-release-zhuangzhuang.in > files/lsb-release-zhuangzhuang
 
 install:
 	mkdir -p ${DESTDIR}/etc
@@ -105,6 +107,8 @@ install:
 	if [ "$(GXDE_CODENAME)" = "tianlu" ]; then cp -rv files/os-version $(DESTDIR)/etc/ ; fi
 	if [ "$(GXDE_CODENAME)" = "bixie" ]; then cp -rv files/lsb-release $(DESTDIR)/etc/ ; fi
 	if [ "$(GXDE_CODENAME)" = "bixie" ]; then  cp -rv files/os-version $(DESTDIR)/etc/ ; fi
+	if [ "$(GXDE_CODENAME)" = "zhuangzhuang" ]; then cp -rv files/lsb-release-zhuangzhuang $(DESTDIR)/etc/lsb-release ; fi
+	if [ "$(GXDE_CODENAME)" = "zhuangzhuang" ]; then cp -rv files/os-version $(DESTDIR)/etc/os-version ; fi
 	cp -rv files/appstore.json $(DESTDIR)/etc/
 	cp -rv files/deepin-logo.png $(DESTDIR)/usr/share/plymouth/
 	cp -rv files/systemd.conf $(DESTDIR)/etc/systemd/system.conf.d/
@@ -119,5 +123,7 @@ install:
 clean:
 	rm -f files/desktop-version
 	rm -f files/lsb-release
+	rm -f files/lsb-release-zhuangzhuang
 	rm -f files/os-version
+	rm -f files/os-release
 	rm -f files/os-release

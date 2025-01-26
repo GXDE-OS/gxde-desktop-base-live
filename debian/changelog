@@ -1,4 +1,4 @@
-deepin-desktop-base (2025.01.22) UNRELEASED; urgency=medium
+deepin-desktop-base (2025.01.26) UNRELEASED; urgency=medium
 
   * 支持紧凑模式
   * 去掉beta字样
@@ -15,7 +15,7 @@ deepin-desktop-base (2025.01.22) UNRELEASED; urgency=medium
   * backport 源用户自动添加 tianlu-bpo 源
   * 根据构建容器环境的环境变量确定是否要拷贝指定文件
 
- -- gfdgd_xi <3025613752@qq.com>  Wed, 22 Jan 2025 17:24:31 +0800
+ -- gfdgd_xi <3025613752@qq.com>  Sun, 26 Jan 2025 16:46:10 +0800
 
 deepin-desktop-base (2024.09.01) UNRELEASED; urgency=medium
 
