@@ -3,7 +3,11 @@ Section: misc
 Priority: optional
 Maintainer: gfdgd xi<3025613752@qq.com>, shenmo <shenmo@spark-app.store>, Deepin Sysdev <sysdev@deepin.com>
 Standards-Version: 4.5.1
-Build-Depends: debhelper-compat (= 12)
+Build-Depends: 
+ debhelper-compat (= 12),
+ make,
+ rename,
+ dpkg
 
 Package: deepin-desktop-base
 Architecture: any
