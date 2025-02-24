@@ -1,3 +1,9 @@
+deepin-desktop-base (2025.02.24) UNRELEASED; urgency=medium
+
+  * 修复 控制中心 系统版本为 gxde 而不是 GXDE
+
+ -- gfdgd_xi <3025613752@qq.com>  Wed, 12 Feb 2025 10:54:29 +0800
+
 deepin-desktop-base (2025.02.12) UNRELEASED; urgency=medium
 
   * 修复 bixie 源的控制中心系统代号显示为 @@RELEASE@@ 的问题
