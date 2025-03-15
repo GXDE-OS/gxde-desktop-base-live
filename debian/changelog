@@ -1,4 +1,4 @@
-deepin-desktop-base (2025.02.24) UNRELEASED; urgency=medium
+deepin-desktop-base (2025.03.15) UNRELEASED; urgency=medium
 
   * 修复 控制中心 系统版本为 gxde 而不是 GXDE
 
