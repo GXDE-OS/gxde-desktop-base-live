@@ -8,7 +8,7 @@ build:
 	cp files/*-bixie temp -r
 	if [ "$(GXDE_CODENAME)" = "zhuangzhuang" ]; then rename "s/-lizhi//g" files/*-lizhi ; fi
 	if [ "$(GXDE_CODENAME)" = "lizhi" ]; then rename "s/-lizhi//g" files/*-lizhi ; fi
-	if [ "$(GXDE_CODENAME)" = "meimei" ]; then rename "s/-lizhi//g" files/*-lizhi ; fi
+	if [ "$(GXDE_CODENAME)" = "meimei" ]; then rename "s/-meimei//g" files/*-meimei ; fi
 	if [ "$(GXDE_CODENAME)" = "tianlu" ]; then rename "s/-bixie//g" files/*-bixie ; fi
 	if [ "$(GXDE_CODENAME)" = "bixie" ]; then rename "s/-bixie//g" files/*-bixie ; fi
 	cp temp/* files -r

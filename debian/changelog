@@ -1,8 +1,8 @@
-deepin-desktop-base (2025.03.15) UNRELEASED; urgency=medium
+deepin-desktop-base (2025.03.16) UNRELEASED; urgency=medium
 
-  * 修复 控制中心 系统版本为 gxde 而不是 GXDE
+  * 修复美美显示成荔枝的问题
 
- -- gfdgd_xi <3025613752@qq.com>  Wed, 12 Feb 2025 10:54:29 +0800
+ -- gfdgd_xi <3025613752@qq.com>  Sun, 16 Mar 2025 16:00:44 +0800
 
 deepin-desktop-base (2025.02.12) UNRELEASED; urgency=medium
 
