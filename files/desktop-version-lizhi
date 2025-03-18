@@ -1,9 +1,9 @@
 [Release]
-Version=25preview1
+Version=25Preview1
 Type=Desktop
 Type[zh_CN]=桌面版
-Edition=Y2024E0001
-Copyright=Y2024CR001
+Edition=Y2025E0001
+Copyright=Y2025CR001
 [Addition]
 Milestone=Lizhi
 Buildid=build1
