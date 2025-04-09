@@ -1,6 +1,7 @@
-deepin-desktop-base (2025.03.18) UNRELEASED; urgency=medium
+deepin-desktop-base (2025.04.09) UNRELEASED; urgency=medium
 
   * 15.15 Release
+  * ban smbd
 
  -- shenmo <shenmo@spark-app.store>  Sun, 16 Mar 2025 16:00:44 +0800
 
