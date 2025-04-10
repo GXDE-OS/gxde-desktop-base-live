@@ -1,0 +1,9 @@
+[Release]
+Version=25Preview1
+Type=Desktop
+Type[zh_CN]=桌面版
+Edition=Y2025E0001
+Copyright=Y2025CR001
+[Addition]
+Milestone=Meimei
+Buildid=build1
