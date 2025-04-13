@@ -1,10 +1,11 @@
-deepin-desktop-base (2025.04.10) UNRELEASED; urgency=medium
+deepin-desktop-base (2025.04.13) UNRELEASED; urgency=medium
 
   * 15.15 Release
   * ban smbd
   * fix meimei build
+  * 新增 DTK2_XWAYLAND 标识 
 
- -- shenmo <shenmo@spark-app.store>  Sun, 16 Mar 2025 16:00:44 +0800
+ -- gfdgd_xi <3025613752@qq.com>  Sun, 13 Apr 2025 13:24:21 +0800
 
 deepin-desktop-base (2025.02.12) UNRELEASED; urgency=medium
 

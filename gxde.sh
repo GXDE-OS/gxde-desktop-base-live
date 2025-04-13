@@ -7,3 +7,5 @@ export DBUS_FATAL_WARNINGS=0
 if [[ -f $HOME/.config/GXDE/dtk/SIZEMODE ]]; then
 	export D_DTK_SIZEMODE=1
 fi
+# 使用 XWAYLAND 开启 DTK2 应用
+export DTK2_XWAYLAND=dxcb
