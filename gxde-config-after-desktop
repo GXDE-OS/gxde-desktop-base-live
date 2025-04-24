@@ -3,13 +3,13 @@ cd /tmp
 debianVersion=`cat /etc/debian_version`
 if [[ $debianVersion==12.* ]]; then
 	cd /tmp
-	killall dde-dock dde-osd -9
-	nohup dde-dock &
+#	killall dde-dock dde-osd -9
+#	nohup dde-dock &
 fi
 
 ## Kwin Blur效果会爆炸，所以需要让这两个家伙重新启动下
 
-nohup dde-launcher &
+#nohup dde-launcher &
 
 ## 预加载dlauncher加速启动
 
@@ -17,8 +17,8 @@ nohup dde-launcher &
 # 加载 VNC（如果开启的话）
 if [[ -f ~/.config/GXDE/gxde-x11vnc ]]; then
 	if [[ -f ~/.vnc/passwd ]]; then
-		nohup x11vnc --forever -rfbauth ~/.vnc/passwd &
+		nohup x11vnc --forever -rfbauth ~/.vnc/passwd -capslock &
 	else
-		nohup x11vnc --forever &  # 免密
+		nohup x11vnc --forever -capslock &  # 免密
 	fi
 fi
