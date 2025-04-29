@@ -70,6 +70,8 @@ install:
 	if [ "$(GXDE_CODENAME)" = "tianlu" ]; then cp -rv files/os-version $(DESTDIR)/usr/lib/deepin/ ; fi
 	if [ "$(GXDE_CODENAME)" = "bixie" ]; then cp -rv files/lsb-release $(DESTDIR)/usr/lib/deepin/ ; fi
 	if [ "$(GXDE_CODENAME)" = "bixie" ]; then  cp -rv files/os-version $(DESTDIR)/usr/lib/deepin/ ; fi
+	if [ "$(GXDE_CODENAME)" = "lizhi" ]; then cp -rv files/lsb-release $(DESTDIR)/usr/lib/deepin/ ; fi
+	if [ "$(GXDE_CODENAME)" = "lizhi" ]; then  cp -rv files/os-version $(DESTDIR)/usr/lib/deepin/ ; fi
 	if [ "$(GXDE_CODENAME)" = "zhuangzhuang" ]; then cp -rv files/lsb-release-zhuangzhuang $(DESTDIR)/usr/lib/deepin/lsb-release ; fi
 	if [ "$(GXDE_CODENAME)" = "zhuangzhuang" ]; then cp -rv files/os-version $(DESTDIR)/usr/lib/deepin/os-version ; fi
 	echo "$(GXDE_CODENAME)" > $(DESTDIR)/usr/lib/deepin/gxde-codename

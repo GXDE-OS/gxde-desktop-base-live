@@ -24,7 +24,7 @@ case "${1}" in
 #		if [[ $(cat /usr/lib/os-release | grep GXDE | wc -l) != "0" ]]; then
 			cp -rv /usr/lib/deepin/os-release /usr/lib/os-release || true
 			for NAME in $(ls /usr/lib/deepin/);do
-                if [ -f /etc/$NAME ];then
+                if [ ! -L /etc/$NAME ];then
                     rm -vf /etc/$NAME
                 fi
                 update-alternatives --install /etc/$NAME $NAME /usr/lib/deepin/$NAME  50
