@@ -66,13 +66,13 @@ install:
 	cp -rv files/i18n_dependent.json $(DESTDIR)/usr/share/i18n
 	cp -rv files/language_info.json $(DESTDIR)/usr/share/i18n/
 	cp -rv files/desktop-version $(DESTDIR)/usr/lib/deepin/
-	if [ "$(GXDE_CODENAME)" = "tianlu" ]; then cp -rv files/lsb-release $(DESTDIR)/etc/ ; fi
-	if [ "$(GXDE_CODENAME)" = "tianlu" ]; then cp -rv files/os-version $(DESTDIR)/etc/ ; fi
-	if [ "$(GXDE_CODENAME)" = "bixie" ]; then cp -rv files/lsb-release $(DESTDIR)/etc/ ; fi
-	if [ "$(GXDE_CODENAME)" = "bixie" ]; then  cp -rv files/os-version $(DESTDIR)/etc/ ; fi
-	if [ "$(GXDE_CODENAME)" = "zhuangzhuang" ]; then cp -rv files/lsb-release-zhuangzhuang $(DESTDIR)/etc/lsb-release ; fi
-	if [ "$(GXDE_CODENAME)" = "zhuangzhuang" ]; then cp -rv files/os-version $(DESTDIR)/etc/os-version ; fi
-	echo "$(GXDE_CODENAME)" > $(DESTDIR)/etc/gxde-codename
+	if [ "$(GXDE_CODENAME)" = "tianlu" ]; then cp -rv files/lsb-release $(DESTDIR)/usr/lib/deepin/ ; fi
+	if [ "$(GXDE_CODENAME)" = "tianlu" ]; then cp -rv files/os-version $(DESTDIR)/usr/lib/deepin/ ; fi
+	if [ "$(GXDE_CODENAME)" = "bixie" ]; then cp -rv files/lsb-release $(DESTDIR)/usr/lib/deepin/ ; fi
+	if [ "$(GXDE_CODENAME)" = "bixie" ]; then  cp -rv files/os-version $(DESTDIR)/usr/lib/deepin/ ; fi
+	if [ "$(GXDE_CODENAME)" = "zhuangzhuang" ]; then cp -rv files/lsb-release-zhuangzhuang $(DESTDIR)/usr/lib/deepin/lsb-release ; fi
+	if [ "$(GXDE_CODENAME)" = "zhuangzhuang" ]; then cp -rv files/os-version $(DESTDIR)/usr/lib/deepin/os-version ; fi
+	echo "$(GXDE_CODENAME)" > $(DESTDIR)/usr/lib/deepin/gxde-codename
 	cp -rv files/deepin-logo.png $(DESTDIR)/usr/share/plymouth/
 	cp -rv files/systemd.conf $(DESTDIR)/etc/systemd/system.conf.d/
 	cp -rv files/logind.conf $(DESTDIR)/etc/systemd/logind.conf.d/
