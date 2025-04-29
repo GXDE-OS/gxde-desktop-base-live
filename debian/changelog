@@ -1,4 +1,4 @@
-deepin-desktop-base (2025.04.28) UNRELEASED; urgency=medium
+deepin-desktop-base (2025.04.29) UNRELEASED; urgency=medium
 
   * 15.15 Release
   * ban smbd
@@ -6,7 +6,7 @@ deepin-desktop-base (2025.04.28) UNRELEASED; urgency=medium
   * 新增 DTK2_XWAYLAND 标识 
   * 修复 vnc 无法正常开启和关闭大写锁定的问题
   * 修改关于窗口地址（www.gxde.org=>www.gxde.top）
-  * 25 Stable
+  * 25 Stable，强制覆盖 LSB-RELEASE
 
  -- gfdgd_xi <3025613752@qq.com>  Sat, 26 Apr 2025 16:40:53 +0800
 
