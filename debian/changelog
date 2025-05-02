@@ -1,4 +1,4 @@
-deepin-desktop-base (2025.04.29) UNRELEASED; urgency=medium
+deepin-desktop-base (2025.05.02) UNRELEASED; urgency=medium
 
   * 15.15 Release
   * ban smbd
@@ -7,8 +7,9 @@ deepin-desktop-base (2025.04.29) UNRELEASED; urgency=medium
   * 修复 vnc 无法正常开启和关闭大写锁定的问题
   * 修改关于窗口地址（www.gxde.org=>www.gxde.top）
   * 25 Stable，强制覆盖 LSB-RELEASE
+  * Lizhi 默认开启 Debian Backport
 
- -- gfdgd_xi <3025613752@qq.com>  Sat, 26 Apr 2025 16:40:53 +0800
+ -- gfdgd_xi <3025613752@qq.com>  Fri, 02 May 2025 09:54:50 +0800
 
 deepin-desktop-base (2025.02.12) UNRELEASED; urgency=medium
 

@@ -1,3 +1,7 @@
 Package: firmware-*:* linux-firmware*:* linux-image-*:* linux-headers-*:* *curl*:* *calamares*:*
 Pin: release n=bookworm-backports
 Pin-Priority: 500
+
+Package: *
+Pin: release n=trixie-backports
+Pin-Priority: 500
