@@ -9,3 +9,5 @@ if [[ -f $HOME/.config/GXDE/dtk/SIZEMODE ]]; then
 fi
 # 使用 XWAYLAND 开启 DTK2 应用
 export DTK2_XWAYLAND=dxcb
+# 让 Xwayland 应用可以使用输入法
+export XMODIFIERS=@im=fcitx
