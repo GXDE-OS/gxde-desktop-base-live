@@ -1,4 +1,4 @@
-deepin-desktop-base (2025.05.19) UNRELEASED; urgency=medium
+deepin-desktop-base (2025.05.25) UNRELEASED; urgency=medium
 
   * 15.15 Release
   * ban smbd
@@ -10,8 +10,9 @@ deepin-desktop-base (2025.05.19) UNRELEASED; urgency=medium
   * Lizhi 默认开启 Debian Backport
   * 回滚 XWayland 应用无法使用 fcitx5 输入法的问题（https://gitee.com/GXDE-OS/GXDE/issues/IC5GSV ）
   * 25 Stable 15.15u2
+  * 修复每次更新 base-files 都会导致 GXDE 的信息被 Debian 覆盖的问题(https://gitee.com/GXDE-OS/GXDE/issues/IC8X2K)
 
- -- gfdgd_xi <3025613752@qq.com>  Mon, 05 May 2025 14:33:49 +0800
+ -- gfdgd_xi <3025613752@qq.com>  Sun, 25 May 2025 07:15:32 +0800
 
 deepin-desktop-base (2025.02.12) UNRELEASED; urgency=medium
 

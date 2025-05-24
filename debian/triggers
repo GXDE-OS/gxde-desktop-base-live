@@ -1,1 +1,2 @@
 interest /usr/share/plymouth/debian-logo.png
+interest-noawait /usr/lib/os-release
