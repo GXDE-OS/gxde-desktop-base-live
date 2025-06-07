@@ -6,6 +6,8 @@ build:
 	mkdir temp -pv
 	cp files/*-lizhi temp -r
 	cp files/*-bixie temp -r
+	cp files/desktop-version-lizhi files/desktop-version -r
+	cp files/os-release-lizhi files/os-release -r
 	if [ "$(GXDE_CODENAME)" = "zhuangzhuang" ]; then rename "s/-lizhi//g" files/*-lizhi ; fi
 	if [ "$(GXDE_CODENAME)" = "lizhi" ]; then rename "s/-lizhi//g" files/*-lizhi ; fi
 	if [ "$(GXDE_CODENAME)" = "meimei" ]; then rename "s/-meimei//g" files/*-meimei ; fi

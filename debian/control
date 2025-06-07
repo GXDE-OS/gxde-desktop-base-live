@@ -1,4 +1,4 @@
-Source: deepin-desktop-base
+Source: gxde-desktop-base
 Section: misc
 Priority: optional
 Maintainer: gfdgd xi<3025613752@qq.com>, shenmo <shenmo@spark-app.store>
@@ -9,12 +9,22 @@ Build-Depends:
  rename,
  dpkg
 
-Package: deepin-desktop-base
+Package: gxde-desktop-base
 Architecture: any
-Provides: deepin-appstore-config, gxde-install-source
-Replaces: gxde-install-source
-Conflicts: deepin-desktop-server, gxde-install-source
-Recommends: gxde-source,tela-grub2-themes
+Provides: 
+ deepin-appstore-config,
+ gxde-install-source,
+ deepin-desktop-base
+Replaces:
+ gxde-install-source,
+ deepin-desktop-base
+Conflicts:
+ gxde-desktop-server,
+ gxde-install-source,
+ deepin-desktop-base
+Recommends:
+ gxde-source,
+ tela-grub2-themes
 Depends: 
  ${misc:Depends}, 
  deepin-keyring, 

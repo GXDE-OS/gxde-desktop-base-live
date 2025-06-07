@@ -1,4 +1,4 @@
-# deepin-desktop-base
+# gxde-desktop-base
 
 ## 安装
 
