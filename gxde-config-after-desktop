@@ -9,7 +9,7 @@ fi
 
 ## Kwin Blur效果会爆炸，所以需要让这两个家伙重新启动下
 
-nohup dde-launcher &
+nohup gxde-launcher &
 
 ## 预加载dlauncher加速启动
 
