@@ -3,8 +3,8 @@ cd /tmp
 debianVersion=`cat /etc/debian_version`
 if [[ $debianVersion==12.* ]]; then
 	cd /tmp
-	killall dde-dock dde-osd -9
-	nohup dde-dock &
+	killall gxde-dock dde-osd -9
+	nohup gxde-dock &
 fi
 
 ## Kwin Blur效果会爆炸，所以需要让这两个家伙重新启动下
