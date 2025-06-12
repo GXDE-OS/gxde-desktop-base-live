@@ -21,7 +21,6 @@ Replaces:
 Conflicts:
  gxde-desktop-server,
  gxde-install-source,
- deepin-desktop-base
 Recommends:
  gxde-source,
  tela-grub2-themes
