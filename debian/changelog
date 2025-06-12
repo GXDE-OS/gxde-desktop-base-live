@@ -1,4 +1,4 @@
-gxde-desktop-base (2025.06.12) UNRELEASED; urgency=medium
+gxde-desktop-base (2025.06.12-1) UNRELEASED; urgency=medium
 
   * 15.15 Release
   * ban smbd
