@@ -1,4 +1,4 @@
-gxde-desktop-base (2025.06.12-1) UNRELEASED; urgency=medium
+gxde-desktop-base (2025.06.15) UNRELEASED; urgency=medium
 
   * 15.15 Release
   * ban smbd
@@ -14,8 +14,9 @@ gxde-desktop-base (2025.06.12-1) UNRELEASED; urgency=medium
   * 修改 dde-launcher 为 gxde-launcher
   * 修改包名 deepin-desktop-base 为 gxde-desktop-base
   * 移除 conflicts
+  * 调整 systemd 版本
 
- -- gfdgd_xi <3025613752@qq.com>  Thu, 12 Jun 2025 22:22:08 +0800
+ -- gfdgd_xi <3025613752@qq.com>  Sun, 15 Jun 2025 11:29:35 +0800
 
 gxde-desktop-base (2025.02.12) UNRELEASED; urgency=medium
 
