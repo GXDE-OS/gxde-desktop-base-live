@@ -6,8 +6,8 @@ build:
 	mkdir temp -pv
 	cp files/*-lizhi temp -r
 	cp files/*-bixie temp -r
-	cp files/desktop-version-lizhi files/desktop-version -r
-	cp files/os-release-lizhi files/os-release -r
+	#cp files/desktop-version-lizhi files/desktop-version -r
+	#cp files/os-release-lizhi files/os-release -r
 	if [ "$(GXDE_CODENAME)" = "zhuangzhuang" ]; then rename "s/-lizhi//g" files/*-lizhi ; fi
 	if [ "$(GXDE_CODENAME)" = "lizhi" ]; then rename "s/-lizhi//g" files/*-lizhi ; fi
 	if [ "$(GXDE_CODENAME)" = "meimei" ]; then rename "s/-meimei//g" files/*-meimei ; fi
@@ -22,11 +22,12 @@ install:
 	mkdir -p ${DESTDIR}/usr/share/distro-info
 	mkdir -p ${DESTDIR}/usr/share/python-apt/templates
 	#mkdir -p ${DESTDIR}/usr/share/backgrounds/deepin
+	mkdir -p ${DESTDIR}/usr/lib/deepin/
 	mkdir -p ${DESTDIR}/usr/share/deepin
 	install -Dm644 files/i18n_dependent.json  ${DESTDIR}/usr/share/i18n/i18n_dependent.json
 	install -Dm644 files/language_info.json  ${DESTDIR}/usr/share/i18n/language_info.json
-	install -Dm644 files/desktop-version ${DESTDIR}/usr/lib/deepin/desktop-version
-	install -Dm644 files/os-release ${DESTDIR}/usr/lib/deepin/os-release
+	if [[ -f files/desktop-version ]]; then install -Dm644 files/desktop-version ${DESTDIR}/usr/lib/deepin/desktop-version ; fi
+	if [[ -f files/os-releases ]]; then install -Dm644 files/os-release ${DESTDIR}/usr/lib/deepin/os-release ; fi
 	#install -Dm644 files/lsb-release     ${DESTDIR}/etc/lsb-release
 	install -Dm644 files/deepin-logo.png ${DESTDIR}/usr/share/plymouth/deepin-logo.png
 	#install -Dm644 files/desktop.jpg     ${DESTDIR}/usr/share/backgrounds/deepin/desktop.jpg
@@ -67,7 +68,7 @@ install:
 
 	cp -rv files/i18n_dependent.json $(DESTDIR)/usr/share/i18n
 	cp -rv files/language_info.json $(DESTDIR)/usr/share/i18n/
-	cp -rv files/desktop-version $(DESTDIR)/usr/lib/deepin/
+	if [[ -f files/desktop-version ]]; then cp -rv files/desktop-version $(DESTDIR)/usr/lib/deepin/ ; fi
 	if [ "$(GXDE_CODENAME)" = "tianlu" ]; then cp -rv files/lsb-release $(DESTDIR)/usr/lib/deepin/ ; fi
 	if [ "$(GXDE_CODENAME)" = "tianlu" ]; then cp -rv files/os-version $(DESTDIR)/usr/lib/deepin/ ; fi
 	if [ "$(GXDE_CODENAME)" = "bixie" ]; then cp -rv files/lsb-release $(DESTDIR)/usr/lib/deepin/ ; fi

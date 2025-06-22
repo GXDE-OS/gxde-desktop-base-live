@@ -13,18 +13,21 @@ case "${1}" in
 		# nmbd 服务还是会有问题
 		 systemctl disable nmbd.service | true
 
-	    update-alternatives --install /etc/deepin-version \
-		    deepin-version /usr/lib/deepin/desktop-version 50
+		if [[ -e /usr/lib/deepin/desktop-version ]]; then
+	    	update-alternatives --install /etc/deepin-version \
+		    	deepin-version /usr/lib/deepin/desktop-version 50
+		fi
+
 		# 修改 os-release
-		# 
-#		if [[ $(cat /usr/lib/os-release | grep GXDE | wc -l) != "0" ]]; then
+		if [[ -e /usr/lib/deepin/os-release ]]; then
 			cp -rv /usr/lib/deepin/os-release /usr/lib/os-release || true
-			for NAME in $(ls /usr/lib/deepin/);do
-                if [ ! -L /etc/$NAME ];then
-                    rm -vf /etc/$NAME
-                fi
-                update-alternatives --install /etc/$NAME $NAME /usr/lib/deepin/$NAME  50
-             done
+		fi
+		for NAME in $(ls /usr/lib/deepin/);do
+            if [ ! -L /etc/$NAME ];then
+                rm -vf /etc/$NAME
+            fi
+            update-alternatives --install /etc/$NAME $NAME /usr/lib/deepin/$NAME  50
+        done
 #		fi
 	    if [ -x /usr/sbin/update-initramfs ]
 	    then
@@ -41,10 +44,15 @@ case "${1}" in
 
 		;;
 	triggered)
-		update-alternatives --install /etc/deepin-version \
-		    deepin-version /usr/lib/deepin/desktop-version 50
+
+		if [[ -e /usr/lib/deepin/desktop-version ]]; then
+	    	update-alternatives --install /etc/deepin-version \
+		    	deepin-version /usr/lib/deepin/desktop-version 50
+		fi
 		# 修改 os-release
-		cp -rv /usr/lib/deepin/os-release /usr/lib/os-release || true
+		if [[ -e /usr/lib/deepin/os-release ]]; then
+			cp -rv /usr/lib/deepin/os-release /usr/lib/os-release || true
+		fi
 		for NAME in $(ls /usr/lib/deepin/);do
     	    if [ ! -L /etc/$NAME ];then
             	rm -vf /etc/$NAME
