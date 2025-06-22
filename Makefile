@@ -26,8 +26,8 @@ install:
 	mkdir -p ${DESTDIR}/usr/share/deepin
 	install -Dm644 files/i18n_dependent.json  ${DESTDIR}/usr/share/i18n/i18n_dependent.json
 	install -Dm644 files/language_info.json  ${DESTDIR}/usr/share/i18n/language_info.json
-	if [[ -f files/desktop-version ]]; then install -Dm644 files/desktop-version ${DESTDIR}/usr/lib/deepin/desktop-version ; fi
-	if [[ -f files/os-releases ]]; then install -Dm644 files/os-release ${DESTDIR}/usr/lib/deepin/os-release ; fi
+	if [ -f files/desktop-version ]; then install -Dm644 files/desktop-version ${DESTDIR}/usr/lib/deepin/desktop-version ; fi
+	if [ -f files/os-release ]; then install -Dm644 files/os-release ${DESTDIR}/usr/lib/deepin/os-release ; fi
 	#install -Dm644 files/lsb-release     ${DESTDIR}/etc/lsb-release
 	install -Dm644 files/deepin-logo.png ${DESTDIR}/usr/share/plymouth/deepin-logo.png
 	#install -Dm644 files/desktop.jpg     ${DESTDIR}/usr/share/backgrounds/deepin/desktop.jpg
@@ -68,7 +68,7 @@ install:
 
 	cp -rv files/i18n_dependent.json $(DESTDIR)/usr/share/i18n
 	cp -rv files/language_info.json $(DESTDIR)/usr/share/i18n/
-	if [[ -f files/desktop-version ]]; then cp -rv files/desktop-version $(DESTDIR)/usr/lib/deepin/ ; fi
+	if [ -f files/desktop-version ]; then cp -rv files/desktop-version $(DESTDIR)/usr/lib/deepin/ ; fi
 	if [ "$(GXDE_CODENAME)" = "tianlu" ]; then cp -rv files/lsb-release $(DESTDIR)/usr/lib/deepin/ ; fi
 	if [ "$(GXDE_CODENAME)" = "tianlu" ]; then cp -rv files/os-version $(DESTDIR)/usr/lib/deepin/ ; fi
 	if [ "$(GXDE_CODENAME)" = "bixie" ]; then cp -rv files/lsb-release $(DESTDIR)/usr/lib/deepin/ ; fi
