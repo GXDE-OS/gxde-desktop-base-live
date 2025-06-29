@@ -1,14 +1,14 @@
 # Maintainer: justforlxz <justforlxz@gmail.com>
-pkgname=gxde-desktop-base-git
+pkgname=gxde-desktop-base-live-git
 pkgver=2021.1.25.r0.g2388ac2
 pkgrel=1
 pkgdesc='Base component for Deepin'
 arch=('any')
-url="https://github.com/linuxdeepin/gxde-desktop-base"
+url="https://github.com/linuxdeepin/gxde-desktop-base-live"
 license=('GPL3')
 groups=('deepin-git')
-conflicts=('gxde-desktop-base')
-provides=('gxde-desktop-base')
+conflicts=('gxde-desktop-base-live')
+provides=('gxde-desktop-base-live')
 groups=('deepin-git')
 makedepends=('git')
 source=("source.tar.gz"

@@ -1,0 +1,9 @@
+[Version] 
+SystemName=GXDE Live
+ProductType=Live
+ProductType[zh_CN]=Live
+EditionName=non-free
+EditionName[zh_CN]=non-free
+MajorVersion=25
+MinorVersion=25.1
+OsBuild=11038.007

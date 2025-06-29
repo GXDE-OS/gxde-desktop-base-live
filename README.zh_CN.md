@@ -1,4 +1,4 @@
-# gxde-desktop-base
+# gxde-desktop-base-live
 
 ## 安装
 

@@ -1,9 +1,0 @@
-[Version] 
-SystemName=GXDE
-ProductType=Desktop
-ProductType[zh_CN]=桌面
-EditionName=Community
-EditionName[zh_CN]=社区版
-MajorVersion=25
-MinorVersion=25.1
-OsBuild=11038.007

@@ -1,10 +1,10 @@
-PRETTY_NAME="GXDE OS 25"
+PRETTY_NAME="GXDE OS 25 Live"
 NAME="GXDE"
 VERSION_ID="25.1"
 VERSION="25.1"
-VERSION_CODENAME=trixie
+VERSION_CODENAME=crimson
 ID=GXDE
-ID_LIKE=debian
+ID_LIKE=deepin
 HOME_URL="https://www.gxde.top/"
 SUPPORT_URL="https://www.gxde.top/"
 BUG_REPORT_URL="https://gitee.com/GXDE-OS/GXDE"
