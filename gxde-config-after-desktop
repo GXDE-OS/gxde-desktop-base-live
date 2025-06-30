@@ -1,5 +1,11 @@
 #!/bin/bash
 cd /tmp
+# 关闭特效模式以节省性能
+sed -i "s%\[Compositing\]%\[Compositing\]\nOpenGLIsUnsafe=true%g" ~/.config/deepin-kwinrc
+sed -i "s%OpenGLIsUnsafe=false%OpenGLIsUnsafe=true%g" ~/.config/deepin-kwinrc
+killall deepin-kwin_x11 -9
+nohup kwin_no_scale --replace &
+
 debianVersion=`cat /etc/debian_version`
 if [[ $debianVersion==12.* ]]; then
 	cd /tmp
@@ -10,6 +16,8 @@ fi
 ## Kwin Blur效果会爆炸，所以需要让这两个家伙重新启动下
 
 nohup gxde-launcher &
+nohup gxde-control-center &
+
 
 ## 预加载dlauncher加速启动
 
@@ -21,4 +29,14 @@ if [[ -f ~/.config/GXDE/gxde-x11vnc ]]; then
 	else
 		nohup x11vnc --forever -capslock &  # 免密
 	fi
+fi
+
+# 安装 deb
+if [[ -e /run/live/medium/deb ]]; then
+	sudo env DEBIAN_FRONTEND=noninteractive apt install /run/live/medium/deb/*.deb -y --allow-downgrades
+fi
+if [[ -e /run/live/medium/live/config.squashfs ]]; then
+	sudo mkdir -pv /tmp/gxde-desktop-base-live-installer
+	sudo mount /run/live/medium/live/config.squashfs /tmp/gxde-desktop-base-live-installer
+	sudo env DEBIAN_FRONTEND=noninteractive apt install /tmp/gxde-desktop-base-live-installer/* -y --allow-downgrades
 fi
