@@ -1,10 +1,10 @@
 #!/bin/bash
 cd /tmp
 # 关闭特效模式以节省性能
+sed -i "s%\[Compositing\]%\[Compositing\]\nEnabled=true%g" ~/.config/deepin-kwinrc
 sed -i "s%\[Compositing\]%\[Compositing\]\nOpenGLIsUnsafe=true%g" ~/.config/deepin-kwinrc
 sed -i "s%OpenGLIsUnsafe=false%OpenGLIsUnsafe=true%g" ~/.config/deepin-kwinrc
 killall deepin-kwin_x11 -9
-nohup kwin_no_scale --replace &
 
 debianVersion=`cat /etc/debian_version`
 if [[ $debianVersion==12.* ]]; then
@@ -15,7 +15,7 @@ fi
 
 ## Kwin Blur效果会爆炸，所以需要让这两个家伙重新启动下
 
-nohup gxde-launcher &
+#nohup gxde-launcher &
 nohup gxde-control-center &
 
 
