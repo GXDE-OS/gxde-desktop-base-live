@@ -33,10 +33,10 @@ fi
 
 # 安装 deb
 if [[ -e /run/live/medium/gxde-deb ]]; then
-	sudo env DEBIAN_FRONTEND=noninteractive apt install /run/live/medium/gxde-deb/*.deb -y --allow-downgrades --fix-missing
+	sudo env DEBIAN_FRONTEND=noninteractive dpkg -i /run/live/medium/gxde-deb/*.deb 
 fi
 if [[ -e /run/live/medium/live/config.squashfs ]]; then
 	sudo mkdir -pv /tmp/gxde-desktop-base-live-installer
 	sudo mount /run/live/medium/live/config.squashfs /tmp/gxde-desktop-base-live-installer
-	sudo env DEBIAN_FRONTEND=noninteractive apt install /tmp/gxde-desktop-base-live-installer/* -y --allow-downgrades --fix-missing
+	sudo env DEBIAN_FRONTEND=noninteractive dpkg -i /tmp/gxde-desktop-base-live-installer/*
 fi

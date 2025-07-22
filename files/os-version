@@ -1,7 +1,7 @@
 [Version] 
-SystemName=GXDE Live
-ProductType=Live
-ProductType[zh_CN]=Live
+SystemName=GXDE Live CD
+ProductType=Live CD
+ProductType[zh_CN]=Live CD
 EditionName=non-free
 EditionName[zh_CN]=non-free
 MajorVersion=25
